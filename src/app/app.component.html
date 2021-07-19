@@ -7,19 +7,42 @@
     </ion-header>
     <ion-content>
       <ion-list>
-        <ion-item>
+        <ion-menu-toggle>
+        <ion-item routerLink="/">
           <ion-icon slot="start" name="home"></ion-icon>
-          <ion-label>Label</ion-label>
-          
+          <ion-label>Home</ion-label>
         </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="/settings">
+          <ion-icon slot="start" name="settings"></ion-icon>
+          <ion-label>Settings</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
         <ion-item>
-          <ion-icon slot="start" name="grid"></ion-icon>
-          <ion-label>Label</ion-label>
+          <ion-icon slot="start" name="share-social"></ion-icon>
+          <ion-label>Share</ion-label>
         </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
         <ion-item>
-          <ion-icon slot="start" name="trash"></ion-icon>
-          <ion-label>Label</ion-label>
+          <ion-icon slot="start" name="logo-google-playstore"></ion-icon>
+          <ion-label>Rate</ion-label>
         </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item>
+          <ion-icon slot="start" name="mail"></ion-icon>
+          <ion-label>Feedback</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+        <ion-item routerLink="/about">
+          <ion-icon slot="start" name="information-circle"></ion-icon>
+          <ion-label>About</ion-label>
+        </ion-item>
+        </ion-menu-toggle>
       </ion-list>
     </ion-content>
   </ion-menu>

@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div>
+  <div id="header-card">
     <ion-slides pager="true">
       <ion-slide>
         <ion-card>
@@ -38,56 +38,75 @@
   </div>
   <div id="nav-buttons">
     <span><ion-button>
-      <ion-icon slot="icon-only" name="add"></ion-icon>
+      <ion-icon slot="icon-only" name="grid-outline"></ion-icon>
     </ion-button>
     </span>
     <span><ion-button>
-      <ion-icon slot="icon-only" name="add"></ion-icon>
+      <ion-icon slot="icon-only" name="image-outline"></ion-icon>
     </ion-button>
     </span>
     <span><ion-button>
-      <ion-icon slot="icon-only" name="add"></ion-icon>
+      <ion-icon slot="icon-only" name="dice-outline"></ion-icon>
     </ion-button>
     </span>
     <span><ion-button>
-      <ion-icon slot="icon-only" name="add"></ion-icon>
+      <ion-icon slot="icon-only" name="book-outline"></ion-icon>
     </ion-button>
     </span>
   </div>
-  <div>
+  <div id="pop-grid">
   <h3>Featured Facts</h3> 
   <ion-grid id="card-grid">
     <ion-row>
       <ion-col size="6">
-        <img src="https://thumbs.dreamstime.com/b/history-magnifying-glass-focused-word-36388781.jpg">
+        <a routerLink="" routerDirection="forward">
+        <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(1).jpg?raw=true">
+        </a>
         <h5>History</h5>
       </ion-col>
       <ion-col size="6">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
-            <ion-card-title>Awesome Title</ion-card-title>
-          </ion-card-header>
-        </ion-card>
+        <a routerLink="" routerDirection="forward">
+        <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project.jpg?raw=true">
+        </a>
         <h5>People</h5>
       </ion-col>
       <ion-col size="6">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
-            <ion-card-title>Awesome Title</ion-card-title>
-          </ion-card-header>
-        </ion-card>
+        <a routerLink="" routerDirection="forward">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(2).jpg?raw=true">
+        </a>
         <h5>Animals</h5>
       </ion-col>
       <ion-col size="6">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Awesome Title</ion-card-title>
-          </ion-card-header>
-        </ion-card>
+        <a routerLink="" routerDirection="forward">
+        <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(3).jpg?raw=true">
+        </a>
+        <h5>Food</h5>
       </ion-col>
     </ion-row>
   </ion-grid> 
   </div>
+  <div id="categ">
+    <h3>Facts by Category</h3>
+    <ion-grid id="card-grid">
+      <ion-row>
+        <ion-col size="6">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(1).jpg?raw=true">
+          <h5>History</h5>
+        </ion-col>
+        <ion-col size="6">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project.jpg?raw=true">
+          <h5>People</h5>
+        </ion-col>
+        <ion-col size="6">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(2).jpg?raw=true">
+          <h5>Animals</h5>
+        </ion-col>
+        <ion-col size="6">
+          <img src="https://github.com/j-juego/ImageFiles/blob/main/New%20Project%20(3).jpg?raw=true">
+          <h5>Food</h5>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
 </ion-content>
